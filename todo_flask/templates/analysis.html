@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Task Analysis</h2>
+
+{% if category_plot %}
+<h4>Tasks per Category</h4>
+<img src="{{ url_for('static', filename=category_plot) }}" class="img-fluid mb-3">
+{% endif %}
+
+{% if done_plot %}
+<h4>Completed vs Incomplete</h4>
+<img src="{{ url_for('static', filename=done_plot) }}" class="img-fluid mb-3">
+{% endif %}
+
+{% if trend_plot %}
+<h4>Tasks Completed Over Time</h4>
+<img src="{{ url_for('static', filename=trend_plot) }}" class="img-fluid mb-3">
+{% endif %}
+
+<a href="{{ url_for('download_report') }}" class="btn btn-primary">Download PDF Report</a>
+<a href="{{ url_for('index') }}" class="btn btn-secondary">Back to Tasks</a>
+{% endblock %}

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+*.sqlite3
+*.db
+
+# VS / IDE
+.vs/
+*.sln
+*.user
+*.suo
+
+# Static outputs
+/static/*.png
+/static/*.pdf
+
+# Mac/OS
+.DS_Store

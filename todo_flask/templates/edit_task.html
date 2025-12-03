@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Edit Task</h2>
+<form method="post">
+    <div class="mb-2">
+        <input class="form-control" name="title" value="{{ task['title'] }}" required>
+    </div>
+    <div class="mb-2">
+        <input class="form-control" name="description" value="{{ task['description'] }}">
+    </div>
+    <div class="mb-2 row">
+        <div class="col">
+            <input type="number" class="form-control" name="priority" value="{{ task['priority'] }}">
+        </div>
+        <div class="col">
+            <input class="form-control" name="category" value="{{ task['category'] }}">
+        </div>
+    </div>
+    <button class="btn btn-success">Save</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
