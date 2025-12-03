@@ -15,20 +15,26 @@ A simple task management system built with Python, Flask, and SQLite.
 
 1.  Clone the repository:
 
-```bash
-git clone https://github.com/Kacper777Js/Flask-ToDo-app.git
-cd Flask-ToDo-app
+
+```
+   git clone https://github.com/Kacper777Js/Flask-ToDo-app.git
+   cd Flask-ToDo-app
+```
 
 2. Install dependencies:
 ```bash
+
 pip install -r requirements.txt
+```
 
 3. Run the application:
+
 ```bash
+
 python app.py
 
 4. Open your web browser and go to `http://127.0.0.1:5000/`
-
+```
 
 ## Usage
 
